@@ -1,8 +1,9 @@
-# Personal Website
+# Light and Matter
 
 ## Getting Started
 
 Install the dependencies:
+
 ```bash
 npm install
 ```
