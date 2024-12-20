@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
 import { Analytics } from "@vercel/analytics/react";
 import "katex/dist/katex.min.css";
 
@@ -16,10 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={GeistSans.className}>
-        <div className="container mx-auto px-6 sm:pt-16 pt-6 text-gray-900 max-w-2xl pb-16">
+      <body>
+        <div className="font-mono container mx-auto px-6 sm:pt-16 pt-6 text-gray-900 max-w-2xl pb-16">
           {/* <NavBar /> */}
-          <div className="prose">{children}</div>
+          <div className="prose prose-sm">{children}</div>
         </div>
         <Analytics />
       </body>
