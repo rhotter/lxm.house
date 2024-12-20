@@ -11,6 +11,7 @@ import peopleImg from "@/app/public/people.jpg"
 import ansonImg from "@/app/public/anson.jpg"
 import guitarImg from "@/app/public/guitar.jpg"
 import playspaceImg from "@/app/public/playspace.jpg"
+import HouseCalendar from "@/app/components/HouseCalendar"
 
 <div className="flex justify-center">
   <Image src={lxmLogo} alt="Light and Matter" className="w-24" />
@@ -31,12 +32,15 @@ How can you image deeper than 1 mm in the brain with light? ⟡ Why do neurons f
 <Image src={houseImg} alt="House image" />
 
 Check out more of our house activities at:
-- our [demo night](https://lxm-house.vercel.app/past-demo-nights) history
+- our [demo night](/demos) history
 - our online [zine](http://zinenight.lxm.house/)
 - our [light hackathon brainstorm](http://art.lxm.house/)
 - a feed of [Aayush’s real-time Amazon orders](http://amazon.lxm.house/)
 - our [smol site to look at fires](https://spectacular-chaja-26ec35.netlify.app/fire/)
 - [Max’s love letter](https://maxlangenkamp.substack.com/p/a-love-letter-to-lxm) saying goodbye to LXM in Cambridge
+
+### Recent whiteboards
+<Image src={whiteboard1} alt="Whiteboard 1" />
 
 ### Fun
 <ImageGrid images={[
@@ -48,11 +52,7 @@ Check out more of our house activities at:
   { src: guitarImg, alt: "Guitar" },
 ]} />
 
-### Recent whiteboards
-<Image src={whiteboard1} alt="Whiteboard 1" />
-
-
 ### House Calendar
-<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&showPrint=0&showNav=0&showTitle=0&showTabs=0&showCalendars=0&showTz=0&src=MWYxZmY0ZjBjNjhiNTBmNWJmNDk3Y2QzNTExMDYwYmZhYzU3YzFjN2JiNTU1NjcxNDVmNmEzMjMwYjFiOTNmN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441" className="w-full h-[600px]"/>
+<HouseCalendar />
 
 Loosely inspired by the rich history of hacker spaces, including [Hack Lodge](http://hacklodge.org/) and [School 2.0](https://school2point0.com/).
