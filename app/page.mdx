@@ -1,5 +1,16 @@
 import Image from "next/image";
 import lxmLogo from "@/app/public/lxm-logo.avif"
+import { ImageGrid } from "@/app/components/ImageGrid";
+import whiteboard1 from "@/app/public/whiteboard1.avif"
+import houseImg from "@/app/public/people3.jpg"
+
+import wordsImgs from "@/app/public/words.jpg"
+import towerImg from "@/app/public/tower.jpg"
+import hatsImg from "@/app/public/hats.jpg"
+import peopleImg from "@/app/public/people.jpg"
+import ansonImg from "@/app/public/anson.jpg"
+import guitarImg from "@/app/public/guitar.jpg"
+import playspaceImg from "@/app/public/playspace.jpg"
 
 <div className="flex justify-center">
   <Image src={lxmLogo} alt="Light and Matter" className="w-24" />
@@ -16,3 +27,30 @@ We're a rotating home for researchers, students, and people with ideas.
 <div className="border border-gray-200 px-4 my-8 text-gray-500">
 How can you image deeper than 1 mm in the brain with light? ⟡ Why do neurons fire spontaneously? ⟡ How can pseudonymity change how we govern ourselves? ⟡ Can you simulate [Cheerios in the browser](https://amazing-phoenix-5fccfc.netlify.app/)?
 </div>
+
+<Image src={houseImg} alt="House image" />
+
+Check out more of our house activities at:
+- our [demo night](https://lxm-house.vercel.app/past-demo-nights) history
+- our online [zine](http://zinenight.lxm.house/)
+- our [light hackathon brainstorm](http://art.lxm.house/)
+- a feed of [Aayush’s real-time Amazon orders](http://amazon.lxm.house/)
+- our [smol site to look at fires](https://spectacular-chaja-26ec35.netlify.app/fire/)
+- [Max’s love letter](https://maxlangenkamp.substack.com/p/a-love-letter-to-lxm) saying goodbye to LXM in Cambridge
+
+### Fun
+<ImageGrid images={[
+  { src: wordsImgs, alt: "Words" },
+  { src: playspaceImg, alt: "Playspace" },
+  { src: ansonImg, alt: "Anson" },
+  { src: hatsImg, alt: "Hats" },
+  { src: peopleImg, alt: "People" },
+  { src: guitarImg, alt: "Guitar" },
+]} />
+
+### Recent whiteboards
+<Image src={whiteboard1} alt="Whiteboard 1" />
+
+
+### House Calendar
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&showPrint=0&showNav=0&showTitle=0&showTabs=0&showCalendars=0&showTz=0&src=MWYxZmY0ZjBjNjhiNTBmNWJmNDk3Y2QzNTExMDYwYmZhYzU3YzFjN2JiNTU1NjcxNDVmNmEzMjMwYjFiOTNmN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441" className="w-full h-[600px]"/>
