@@ -63,7 +63,7 @@ export default function AmazonPage() {
         <a href={feed.source} target="_blank" rel="noopener noreferrer">
           /things
         </a>{" "}
-        post. Last synced {formatDate(feed.updatedAt)}.
+        post. Last updated {formatDate(feed.updatedAt)}.
       </p>
 
       {showRecent ? (
